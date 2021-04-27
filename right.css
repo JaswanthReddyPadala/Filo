@@ -8,11 +8,11 @@
     width:20rem;
     background-image: linear-gradient(to right bottom, rgb(34, 199, 177),rgb(20, 121, 107));
     color:var(--white);
-    height:50%;
+    height:45%;
+    margin:2rem;
     border-radius: 50px;
     position: relative;
     padding:1rem 1.5rem;
-    
     -webkit-box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
 -moz-box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
 box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
@@ -31,6 +31,7 @@ box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 1000px;
+    stroke-linecap: round;
     border-right-color: var(--orange);
     border-bottom-color: var(--yellow);
 }
@@ -40,13 +41,15 @@ box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
     content:"";
     position: absolute;
     width:90%;
-    height:80%;
-    right:-10%;
-    top:-10%;
-    transform: rotate(10deg) translate(-2.5%,10%);
+    height:100%;
+    /* right:-0%;
+    top:-0%; */
+    /* transform: rotate(10deg) translate(-2.5%,10%); */
     border-radius: 50px;
     z-index:-1;
     background-color: var(--yellow);
+    animation: cardOne 1.5s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .right_card::before{
@@ -54,14 +57,38 @@ box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
     position: absolute;
     width:75%;
     height:90%;
-    right:-10%;
-    top:-10%;
-    transform: rotate(30deg) translate(5%,10%);
     border-radius: 50px;
     z-index:-1;
     background-color: var(--violet);
+    animation: cardTwo 1s ease-in-out 1s;
+    animation-fill-mode: forwards;
 }
 
+
+@keyframes cardOne{
+    from{
+        top:0;
+        right:0;
+    }
+    to{
+        top:-15%;
+        right:-10%;
+        transform: rotate(10deg) translate(-2.5%,10%);
+    }
+}
+
+@keyframes cardTwo{
+    from{
+        top:0;
+        right:0;
+    }
+    to{
+        top:-10%;
+        right:-15%;
+        transform: rotate(30deg) translate(-2.5%,10%);
+
+    }
+}
 .favorite_card{
     padding:1.5rem;
     width:100%;  
@@ -89,7 +116,4 @@ box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
 .f-dots{
     justify-self: flex-end;
     color:var(--gray);
-}
-.translate-in{
-    transform: translateX(0%);
 }

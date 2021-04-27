@@ -1,5 +1,7 @@
 const menu = document.querySelector('.hamburger-mob');
 const navbar = document.querySelector('.aside-nav');
+const vio = document.querySelectorAll('.vio');
+
 
 const chartData = [{  //chart data
         "label": "Mon",
@@ -49,26 +51,33 @@ const chartData = [{  //chart data
 
 
 
-
+//NAVBAR
 menu.addEventListener("click", function() {
-    navbar.classList.toggle("translate-in");
+    navbar.classList.toggle("mob-nav-out");
 })
 
 
+
+
+// DARK THEME
 let themeSwitch = document.querySelector('.theme-switch');
-
-
 let isdark = true;
 
 themeSwitch.addEventListener("click", function(){
     if(isdark){
         document.body.style.backgroundColor = "#181818";
         document.body.style.color = "#fafafa";
+        for (let item of vio){
+            item.style.color = "#f6f2ff";
+        }
         isdark = false;
     }
     else{
         isdark=true;
         document.body.style.backgroundColor = "#fafafa";
         document.body.style.color = "#181818";
+        for (let item of vio){
+            item.style.color = "#51336f";
+        }
     }
 });

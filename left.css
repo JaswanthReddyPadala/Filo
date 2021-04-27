@@ -204,7 +204,7 @@ box-shadow: 24px 22px 52px 2px rgba(52, 105, 55, 0.66);
 
 .avatar{
     width:35px;
-    height:auto;
+    height:35px;
     border-radius: 50%;
     margin-left: -10px;
 }
@@ -214,6 +214,9 @@ box-shadow: 24px 22px 52px 2px rgba(52, 105, 55, 0.66);
     height:100%;
 }
 
-.pl-bg{
-    background-color: #fafafa;
+.avatar .plus-icon{
+    background-color: var(--white);
+    color:var(--black);
+    box-shadow: none;
+    border: 1px dashed var(--gray);
 }

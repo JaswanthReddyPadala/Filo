@@ -1,6 +1,5 @@
 
 body{
-    /* padding:3vh 2vw; */
     font-family: 'Nunito', sans-serif;
 }
 
@@ -11,14 +10,12 @@ body{
 
 /* ASIDE */
 
-#aside{
+.aside-nav{
     width:8%;
     padding:2.5vh 1vw;
-
-    /* background-color: blue; */
     border-right: 1px solid var(--light-gray);
     min-height:100vh;
-    max-height:2000vh;
+    max-height:300vh;
 }
 
 .nav_list{

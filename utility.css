@@ -41,9 +41,6 @@
     box-sizing: border-box;
 }
 
-/* .container{
-    display: flex;
-} */
 html{
     font-size:16px;
 }
@@ -84,14 +81,6 @@ margin-left:5px;
 
 .mb-10{
     margin-bottom: 10px;
-}
-
-.mb-10{
-    margin-bottom: 10px;
-}
-
-.mb-20{
-    margin-bottom: 20px;
 }
 
 .ml-20{
