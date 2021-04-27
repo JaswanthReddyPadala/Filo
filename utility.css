@@ -1,0 +1,118 @@
+/* UTILITY CLASSES */
+:root{
+    --orange : #f47a6e;
+    --l-orange : #fff3f0;
+
+    --green : rgba(24, 145, 129,1);
+    --l-green : #def9f9;
+    
+    --yellow : rgba(255, 190, 91,1);
+    --light :#ffee9b;
+
+    --violet : #51336f;
+    --l-violet : #f6f2ff;
+    
+    --gray : #bcbcbc;
+    --icon-color: #ced3e1;
+    --light-gray : rgb(232, 232, 232);
+    
+    --progress : #51336f;
+
+    --black : #181818;
+
+    --turq : #1cabae;
+
+    --white : #fafafa;
+}
+
+*, *:after, *:before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container{
+    display: flex;
+} */
+html{
+    font-size:16px;
+}
+
+.flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.all-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-btw{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.icon{
+    height:auto;
+    transform: scale(1.35);
+    color: var(--gray);
+}
+
+.ml-5{
+margin-left:5px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.ml-20{
+    margin-left:20px;
+}
+
+.ml-15{
+    margin-left:20px;
+}
+
+.br{
+    border-radius: 50%;
+}
+
+.br-10{
+    border-radius: 30px;
+}
+.mr-2p{
+    margin-right: 2%;
+}
+
+.bold{
+    font-weight:900;
+}
+
+p{
+    font-size: 0.8rem;
+    color:var(--gray);
+}
+
+.vio{
+    color:var(--violet);
+    font-weight: 600;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filo Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+
+    <section id="aside" class="flex col justify-btw align-center">
+        <a><img src="./assets/ham.svg" class="hamburger" alt=""></a>
+
+        <nav class="nav all-center flex col">
+            <ul class="nav_list flex col all-center">
+                <li class="nav_list-item flex all-center active"> <i class="fas fa-home nav-icon"></i> </li>
+                <li class="nav_list-item"> <i class="fas fa-chart-bar"></i></li>
+                <li class="nav_list-item"> <i class="fas fa-clock nav-icon"></i> </li>
+                <li class="nav_list-item"> <i class="fas fa-laptop-code nav-icon"></i> </li>
+                <li class="nav_list-item"> <i class="fas fa-envelope nav-icon"></i> </li>
+                <li class="nav_list-item"> <i class="fas fa-rocket nav-icon"></i> </li>
+                <li class="nav_list-item"> <i class="fas fa-cog nav-icon"></i> </li>
+            </ul>
+        </nav>
+
+        <div class="aside_user">
+            <img src="./assets/user-avatar.svg" alt="">
+        </div>
+    </section>
+    
+    <main class="main">
+        <div class="main_options flex align-center">
+            <i class="fas fa-calendar-week icon"></i>
+            <h3 class="ml-20">Jan 27, 2021</h3>
+            <i class="fas fa-search icon ml-20"></i>
+            <i class="fas fa-bell icon notification ml-20"></i>
+        </div>
+
+        <section id="center" class="flex">
+            <section id="left" class="flex col ">
+
+                <div class="center_top flex justify-btw">
+                    <div class="center_top-content">
+                        <h1 class="mb-15 bold">My Folders</h1>
+                        <p>Photos, Videos, Documents</p>
+                    </div>
+                    
+                    <div class="center_top-add">
+                        <i class="fas fa-plus plus-icon br"></i>
+                    </div>
+                </div>
+                
+                <div class="center_folder-group flex justify-btw">
+                    <div class="folder mr-2p br-10">
+                        <div class="side mb-10 flex justify-btw">
+                            <i class="fas fa-folder fol-violet fa-4x folder-icon-bg"></i>
+                            
+                            <i class="fas fa-ellipsis-v dots"></i>
+                        </div>
+                        <h3 class="mb-10">Photos</h3>
+                        <div class="side mb-10 align-center flex justify-btw">
+                            <h1>25%</h1>
+                            <p class="vio">5 Days ago</p>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="fill-25"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="folder mr-2p br-10">
+                        <div class="side mb-10 flex justify-btw">
+                            <i class="fas fa-folder fol-yellow fa-4x folder-icon-bg"></i>
+                            
+                            <i class="fas fa-ellipsis-v dots"></i>
+                        </div>
+                        <h3 class="mb-10">Songs</h3>
+                        <div class="side mb-10 align-center flex justify-btw">
+                            <h1>75%</h1>
+                            <p class="vio">1 Week before</p>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="fill-75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="folder br-10">
+                        <div class="side mb-10 flex justify-btw">
+                            <i class="fas fa-folder fol-orange fa-4x folder-icon-bg"></i>
+                            
+                            <i class="fas fa-ellipsis-v dots"></i>
+                        </div>
+                        <h3 class="mb-10">Documents</h3>
+                        <div class="side mb-10 align-center flex justify-btw">
+                            <h1>45%</h1>
+                            <p class="vio">1 Week before</p>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="fill-45"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
+                <div class="chart" id="chart-container">FusionCharts XT will load here!</div>
+
+                <div class="my_favorite">
+                    <h1 class="bold">My Favourite</h1>
+                    <p>Photos, Videos, Documents</p>
+
+                    <div class="my_favorite-row flex justify-btw">
+                        <div class="my_favorite-each flex justify-btw">
+                            <div class="each-content">
+                                <h2>Photos</h2>
+                                <p>4,524 Files</p>
+                            </div>
+
+                            <div class="avatar-group flex align-center">
+                                <div class="avatar"><img src="./assets/user-avatar.svg" alt=""></div>
+                                <div class="avatar">  <img src="./assets/avatar-1.svg" alt=""></div>
+                                <div class="avatar"><img src="./assets/avatar-2.svg" alt=""></div>
+                                <div class="avatar"><i class="fas fa-plus br pl-bg"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="my_favorite-each flex justify-btw">
+                            <div class="each-content">
+                                <h2>Videos</h2>
+                                <p>4,524 Files</p>
+                            </div>
+
+                            <div class="avatar-group flex align-center">
+                                
+                                <div class="avatar">  <img src="./assets/avatar-1.svg" alt=""></div>
+                                <div class="avatar"><img src="./assets/user-avatar.svg" alt=""></div>
+                                <div class="avatar"><img src="./assets/avatar-2.svg" alt=""></div>
+                                <div class="avatar"><i class="fas fa-plus br pl-bg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        
+        
+        <section id="right">
+            <div class="right_card mb-20 flex col justify-center">
+                <div class="circular-progress">
+                    <h1>65%</h1>
+                    <p>Used</p>
+                </div>
+                
+                <div class="right_card-content flex justify-btw align-center">
+                    <div class="right-content-group">
+                        <p>Total Space</p>
+                        <h1>256 GB</h1>
+                    </div>
+                    
+                    <div class="right-content-group">
+                        <p>Used Space</p>
+                        <h1>180 GB</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorite flex col">
+                <h1 class="bold">Favorite</h1>
+                <p class="mb-10">Documents</p>
+                <div class="fav_card-group">
+
+                    <div class="favorite_card fav-orange mb-10 flex align-center justify-btw">
+                        <div class="fav_card-left flex align-center">
+                        <i class="fas fa-folder-open fa-2x"></i>
+                        <div class="favorite_card-content ml-15">
+                            <h3>Products</h3>
+                            <p>150 files</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-v f-dots"></i>
+                </div>
+                
+                <div class="favorite_card fav-violet mb-10 flex align-center justify-btw">
+                    <div class="fav_card-left flex align-center">
+                        <i class="fas fa-folder-open fa-2x"></i>
+                        <div class="favorite_card-content ml-15">
+                            <h3>Products</h3>
+                            <p>150 files</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-v f-dots"></i>
+                </div>
+                
+                <div class="favorite_card fav-green mb-10 flex align-center justify-btw">
+                    <div class="fav_card-left flex align-center">
+                        <i class="fas fa-folder-open fa-2x"></i>
+                        <div class="favorite_card-content ml-15">
+                            <h3>Products</h3>
+                            <p>150 files</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-v f-dots"></i>
+                </div>
+            </div>
+                
+
+            </div>
+        </section>
+    </section>
+        
+    </main>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@media screen and (max-width:1050px){
+    html{
+        font-size:14px;
+    }
+
+    .right_card{
+        height:40%;
+    }
+    .favorite{
+        height:60%;
+        align-content: stretch;
+    }
+
+    .favorite_card{
+        justify-items: stretch;
+    }
+    .aside_user{
+        width:3.5rem;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:850px){
+    html{
+        font-size:12px;
+    }
+
+    #left{
+        width:100%;
+    }
+
+    .right_card{
+        padding:1rem;
+    }
+    #center{
+        flex-direction:column ;
+        width:100%;
+    }
+
+    .main{
+        padding-right:1.5vw;
+    }
+    #left{
+        width:100%;
+    }
+
+    #right{
+        display: flex;
+        height:max-content;
+        flex-direction: row;
+        width:100%;
+    }
+    
+    .right_card{
+        width:40%;
+        margin-right:20%;
+        height:22rem;
+    }
+    .favorite{
+        width:40%;
+    }
+
+    
+}
+
+@media screen and (min-width:551px) {
+    .container{
+        display: flex;
+    }
+    .bold{
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width:550px){
+    /* .nav, .aside_user{
+        display:none;
+    } */
+    html{
+        font-size: 14px;
+    }
+    #aside{
+        display: none;
+    }
+    .container{
+        width:100vw;
+    }
+    body{
+        padding:0;
+    }
+    .main{
+        width:100%;
+    }
+
+    .my_favorite-row{
+        flex-direction: column;
+    }
+
+    .my_favorite-each{
+        margin-bottom:20px;
+    }
+    #right{
+        display: flex;
+        height:max-content;
+        flex-direction: column;
+        width:100%;
+    }
+    .create_folder-group{
+        overflow-x: scroll;
+    }
+    
+    .right_card{
+        height:20rem;
+        width:60%;
+        align-self:center;
+        justify-self: center;
+    }
+    .folder{
+        flex-basis: 50%;
+    }
+    .favorite{
+        display: flex;
+        width:100%;
+        overflow-x: scroll;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    .my_favorite-each{
+        margin-right:15px;
+    }
+    .vio{
+        font-size:0.6rem;
+    }
+    .side h1{
+        font-size:1.1rem;
+    }
+}

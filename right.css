@@ -1,0 +1,91 @@
+#right{
+    width:30%;
+    display: block;
+    padding:2.25%;
+    /* background-color: blue; */
+    /* background-color: pink; */
+}
+
+.right_card{
+    width:17rem;
+    background-image: linear-gradient(to right bottom, rgb(34, 199, 177),rgb(20, 121, 107));
+    color:var(--white);
+    height:52.5%;
+    border-radius: 50px;
+    position: relative;
+    padding:1rem 1.5rem;
+}
+
+.right_card p{
+    color:var(--white);
+}
+
+.circular-progress{
+    justify-self: center;
+    align-self: center;
+    border: 1.5rem solid rgba(232, 232, 232,0.3);
+    padding:2.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 1000px;
+    border-right-color: var(--orange);
+    border-bottom-color: var(--yellow);
+}
+
+
+.right_card::after{
+    content:"";
+    position: absolute;
+    width:90%;
+    height:80%;
+    right:-10%;
+    top:-10%;
+    transform: rotate(10deg) translate(-2.5%,10%);
+    border-radius: 50px;
+    z-index:-1;
+    background-color: var(--yellow);
+}
+
+.right_card::before{
+    content:"";
+    position: absolute;
+    width:75%;
+    height:90%;
+    right:-10%;
+    top:-10%;
+    transform: rotate(30deg) translate(5%,10%);
+    border-radius: 50px;
+    z-index:-1;
+    background-color: var(--violet);
+}
+
+.favorite_card{
+    padding:1.5rem;
+    width:100%;  
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.fav-orange{
+    background-color: var(--l-orange);  
+    /* background-color: black;   */
+    color:var(--orange);
+}
+
+
+.fav-violet{
+    background-color: var(--l-violet);  
+    /* background-color: black;   */
+    color:var(--violet);
+}
+
+
+.fav-green{
+    background-color: var(--l-green);  
+    /* background-color: black;   */
+    color:var(--green);
+}
+.f-dots{
+    justify-self: flex-end;
+    color:var(--gray);
+}
