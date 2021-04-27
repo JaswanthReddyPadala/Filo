@@ -1,19 +1,22 @@
 #right{
-    width:30%;
+    width:35%;
     display: block;
     padding:2.25%;
-    /* background-color: blue; */
-    /* background-color: pink; */
 }
 
 .right_card{
-    width:17rem;
+    width:20rem;
     background-image: linear-gradient(to right bottom, rgb(34, 199, 177),rgb(20, 121, 107));
     color:var(--white);
-    height:52.5%;
+    height:50%;
     border-radius: 50px;
     position: relative;
     padding:1rem 1.5rem;
+    
+    -webkit-box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
+-moz-box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
+box-shadow: 24px 22px 52px 9px rgba(107,107,107,0.66);
+
 }
 
 .right_card p{
@@ -68,24 +71,25 @@
 
 .fav-orange{
     background-color: var(--l-orange);  
-    /* background-color: black;   */
     color:var(--orange);
 }
 
 
 .fav-violet{
     background-color: var(--l-violet);  
-    /* background-color: black;   */
     color:var(--violet);
 }
 
 
 .fav-green{
     background-color: var(--l-green);  
-    /* background-color: black;   */
     color:var(--green);
 }
+
 .f-dots{
     justify-self: flex-end;
     color:var(--gray);
+}
+.translate-in{
+    transform: translateX(0%);
 }

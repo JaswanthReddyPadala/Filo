@@ -3,6 +3,10 @@
     --orange : #f47a6e;
     --l-orange : #fff3f0;
 
+
+    --bg-color:#fafafa;
+--text-color:#181818;
+
     --green : rgba(24, 145, 129,1);
     --l-green : #def9f9;
     
@@ -24,6 +28,12 @@
 
     --white : #fafafa;
 }
+
+[data-them = "dark"]{
+    --bg-color:#3f3f3f;
+    --text-color: #fafafa;
+}
+
 
 *, *:after, *:before{
     margin:0;

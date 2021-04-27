@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="left.css">
     <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
 <body>
     <div class="container">
 
-    <section id="aside" class="flex col justify-btw align-center">
+    <section id="aside" class="aside-nav flex col justify-btw align-center">
         <a><img src="./assets/ham.svg" class="hamburger" alt=""></a>
 
         <nav class="nav all-center flex col">
@@ -46,11 +47,16 @@
     </section>
     
     <main class="main">
-        <div class="main_options flex align-center">
-            <i class="fas fa-calendar-week icon"></i>
-            <h3 class="ml-20">Jan 27, 2021</h3>
-            <i class="fas fa-search icon ml-20"></i>
-            <i class="fas fa-bell icon notification ml-20"></i>
+        <div class="main_options flex justify-btw">
+            <div class="ham-mob-container"><img src="./assets/ham.svg" class="hamburger-mob" alt=""></div>
+
+            <div class="rest_options flex align-center">
+                <i class="fas fa-calendar-week icon"></i>
+                <h3 class="ml-20">Jan 27, 2021</h3>
+                <i class="fas fa-search icon ml-20"></i>
+                <i class="fas fa-bell icon notification ml-20"></i>
+                <i class="fas fa-adjust theme-switch icon ml-20"></i>
+            </div>
         </div>
 
         <section id="center" class="flex">
@@ -69,14 +75,14 @@
                 
                 <div class="center_folder-group flex justify-btw">
                     <div class="folder mr-2p br-10">
-                        <div class="side mb-10 flex justify-btw">
+                        <div class=" mb-10 flex justify-btw">
                             <i class="fas fa-folder fol-violet fa-4x folder-icon-bg"></i>
                             
                             <i class="fas fa-ellipsis-v dots"></i>
                         </div>
-                        <h3 class="mb-10">Photos</h3>
-                        <div class="side mb-10 align-center flex justify-btw">
-                            <h1>25%</h1>
+                        <h4 class="mb-10">Photos</h4>
+                        <div class=" mb-10 align-center flex justify-btw">
+                            <h1 class="p-bold">25%</h1>
                             <p class="vio">5 Days ago</p>
                         </div>
                         
@@ -86,14 +92,14 @@
                     </div>
                     
                     <div class="folder mr-2p br-10">
-                        <div class="side mb-10 flex justify-btw">
+                        <div class=" mb-10 flex justify-btw">
                             <i class="fas fa-folder fol-yellow fa-4x folder-icon-bg"></i>
                             
                             <i class="fas fa-ellipsis-v dots"></i>
                         </div>
-                        <h3 class="mb-10">Songs</h3>
-                        <div class="side mb-10 align-center flex justify-btw">
-                            <h1>75%</h1>
+                        <h4 class="mb-10">Songs</h4>
+                        <div class=" mb-10 align-center flex justify-btw">
+                            <h1 class="p-bold">75%</h1>
                             <p class="vio">1 Week before</p>
                         </div>
                         
@@ -103,14 +109,14 @@
                     </div>
                     
                     <div class="folder br-10">
-                        <div class="side mb-10 flex justify-btw">
+                        <div class=" mb-10 flex justify-btw">
                             <i class="fas fa-folder fol-orange fa-4x folder-icon-bg"></i>
                             
                             <i class="fas fa-ellipsis-v dots"></i>
                         </div>
-                        <h3 class="mb-10">Documents</h3>
-                        <div class="side mb-10 align-center flex justify-btw">
-                            <h1>45%</h1>
+                        <h4 class="mb-10">Documents</h4>
+                        <div class=" mb-10 align-center flex justify-btw">
+                            <h1 class="p-bold">45%</h1>
                             <p class="vio">1 Week before</p>
                         </div>
                         
@@ -160,11 +166,11 @@
                         </div>
                     </div>
                 </div>
-        </section>
+            </section>
         
         
         
-        <section id="right">
+        <section id="right" class="right">
             <div class="right_card mb-20 flex col justify-center">
                 <div class="circular-progress">
                     <h1>65%</h1>
@@ -204,7 +210,7 @@
                     <div class="fav_card-left flex align-center">
                         <i class="fas fa-folder-open fa-2x"></i>
                         <div class="favorite_card-content ml-15">
-                            <h3>Products</h3>
+                            <h3>Wed Design</h3>
                             <p>150 files</p>
                         </div>
                     </div>
@@ -215,8 +221,8 @@
                     <div class="fav_card-left flex align-center">
                         <i class="fas fa-folder-open fa-2x"></i>
                         <div class="favorite_card-content ml-15">
-                            <h3>Products</h3>
-                            <p>150 files</p>
+                            <h3>Photos</h3>
+                            <p>1540 files</p>
                         </div>
                     </div>
                     <i class="fas fa-ellipsis-v f-dots"></i>

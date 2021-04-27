@@ -1,41 +1,7 @@
-// window.onload = function () {
+const menu = document.querySelector('.hamburger-mob');
+const navbar = document.querySelector('.aside-nav');
 
-//     var chart = new CanvasJS.Chart("chartContainer", {
-//         animationEnabled: true,  
-//         // title:{
-//         //     text: "Music Album Sales by Year"
-//         // },
-//         axisY: {
-//             // title: "Units Sold",
-//             valueFormatString: "#000,,.",
-//             suffix: "GB",
-//             // stripLines: [{
-//             //     value: 3366500,
-//             //     label: "Average"
-//             // }]
-//         },
-//         data: [{
-//             yValueFormatString: "### GB",
-//             xValueFormatString: "###",
-//             type: "spline",
-//             dataPoints: [
-//                 {x: "Mon", y: 2506000},
-//                 {x: "Tue", y: 110},
-//                 {x: "Wed", y: 140},
-//                 {x: "Thu", y: 160},
-//                 {x: "Fri", y: 180},
-//                 {x: "Sat", y: 200},
-//                 {x: "Sun", y: 1872000},
-//             ]
-//         }]
-//     });
-//     chart.render();
-    
-//     }
-
-
-
-    const chartData = [{
+const chartData = [{  //chart data
         "label": "Mon",
         "value": "50"
     }, {
@@ -58,7 +24,7 @@
         "value": "180"
     }];
 
-    //STEP 3 - Chart Configurations
+    
     const chartConfig = {
     type: 'spline',
     renderAt: 'chart-container',
@@ -80,3 +46,29 @@
     var fusioncharts = new FusionCharts(chartConfig);
     fusioncharts.render();
     });
+
+
+
+
+menu.addEventListener("click", function() {
+    navbar.classList.toggle("translate-in");
+})
+
+
+let themeSwitch = document.querySelector('.theme-switch');
+
+
+let isdark = true;
+
+themeSwitch.addEventListener("click", function(){
+    if(isdark){
+        document.body.style.backgroundColor = "#181818";
+        document.body.style.color = "#fafafa";
+        isdark = false;
+    }
+    else{
+        isdark=true;
+        document.body.style.backgroundColor = "#fafafa";
+        document.body.style.color = "#181818";
+    }
+});
